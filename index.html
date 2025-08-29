@@ -1,75 +1,229 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Skyfix - Hard Rock Cover Band Anni 70/80. Scopri la nostra storia, la band e i prossimi eventi live."/>
+    <meta name="keywords"
+          content="Skyfix, rock band, hard rock, musica anni 70, musica anni 80, band acustica, concerti, musica live"/>
+    <meta name="author" content="Skyfix Band"/>
+    <title>Skyfix - Rock Band</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
 
-  <!-- SEO Meta Tags -->
-  <title>Skyfix | Rock Band Ufficiale</title>
-  <meta name="description" content="Skyfix è una rock band energica e originale. Segui Skyfix su Facebook, Instagram e YouTube per musica, concerti e aggiornamenti.">
-  <meta name="keywords" content="Skyfix, rock band, musica rock, band italiana, rock live, musica originale">
-  <meta name="author" content="Skyfix">
+        header {
+            color: white;
+        }
 
-  <!-- Open Graph Meta Tags (per social preview) -->
-  <meta property="og:title" content="Skyfix | Rock Band Ufficiale">
-  <meta property="og:description" content="Segui Skyfix su Facebook, Instagram e YouTube per musica, concerti e aggiornamenti.">
-  <meta property="og:image" content="https://skyfix.band/skyfix.png"> <!-- Sostituire con un'immagine reale -->
-  <meta property="og:url" content="https://skyfix.band"> <!-- Sostituire con dominio reale -->
-  <meta property="og:type" content="website">
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px #000;
+        }
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+        section {
+            padding: 60px 0;
+        }
 
-  <!-- Bootstrap & Font Awesome -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
 
-  <!-- Style -->
-  <style>
-     html, body {
-     height: 100%;
-    }
-    body {
-      background: linear-gradient(to top, #2c2c2c, #000000);
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .band-name {
-      font-size: 3rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    .social-icons a {
-      color: #fff;
-      margin: 0 15px;
-      font-size: 2rem;
-      transition: color 0.3s;
-    }
-    .social-icons a:hover {
-      color: #f00;
-    }
-  </style>
+        footer a:hover {
+            text-decoration: none;
+            color: #f0ad4e;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="skyfix.png" alt="Skyfix Band Logo">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="social-icons mt-4">
-      <a href="https://facebook.com/skyfixband" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://instagram.com/skyfixband" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://youtube.com/@skyfixband" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#about">Chi Siamo</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#members">Membri</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#events">Prossimi Eventi</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
+</nav>
 
+<header class="bg-dark text-white text-center py-5" style="background-color: #000000;">
+    <div class="container">
+        <img src="img/skyfix.png" alt="Skyfix Logo" style="max-width: 250px; width: 100%; height: auto;"
+             class="mb-4 shadow-lg rounded">
+
+        <p class="lead">Hard Rock Cover Band | Acoustic Sets</p>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="text-center mb-4">Chi Siamo</h2>
+        <p class="lead text-center">
+            <span class="fw-bold">Skyfix</span> è una band con oltre vent’anni di esperienza sulle spalle, nata come cover band con una forte
+            identità hard rock. Fin dagli inizi, il nostro obiettivo è stato portare sul palco l’energia e la potenza
+            dei grandi classici del rock, con uno stile diretto, fedele e carico di personalità.
+        </p>
+
+        <p class="lead text-center">
+            Negli anni, abbiamo costruito un repertorio che attraversa quasi cinque decenni di musica: dai riff
+            intramontabili degli anni ’70, passando per le hit rock e alternative degli anni ’80 e ’90, fino ai brani
+            più attuali. Il tutto senza mai tradire la nostra anima rock.
+        </p>
+
+        <p class="lead text-center">
+            Oggi portiamo avanti anche <span class="fw-bold">Skyfix</span> <span class="fst-italic">Acoustic</span>, un progetto parallelo che rivisita alcuni di
+            questi brani in chiave acustica. Non un semplice unplugged, ma una nuova lettura che mette in risalto le
+            melodie e le atmosfere, mantenendo sempre lo spirito e l’attitudine che ci contraddistingue.
+        </p>
+
+        <p class="lead text-center">
+            Che sia con l’amplificatore al massimo o in una versione più intima, il nostro obiettivo è lo stesso:
+            condividere la passione per la musica e farla arrivare dritta al cuore (e alle orecchie) di chi ci ascolta.
+        </p>
+    </div>
+</section>
+
+<section id="members" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">I Membri della Band</h2>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-3 text-center">
+                <img src="img/denis.png"
+                     class="rounded-circle img-fluid shadow" style="width: 150px; height: 150px; object-fit: cover;"
+                     alt="Denis">
+            </div>
+            <div class="col-md-9">
+                <h5>Denis</h5>
+                <h6>Voce / Chitarra</h6>
+                <p class="text-muted">
+                    Fra i membri fondatori del progetto, Denis è un cantante e chitarrista che unisce precisione e
+                    passione. La sua costante ricerca della miglior interpretazione lo porta a rimanere fedele allo
+                    spirito originale di ogni brano, senza però rinunciare a un tocco personale che rende ogni
+                    esecuzione unica. La sua sensibilità musicale e l’attenzione ai dettagli ne fanno una presenza
+                    solida e ispirata sul palco.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-3 text-center">
+                <img src="img/jack.png"
+                     class="rounded-circle img-fluid shadow" style="width: 150px; height: 150px; object-fit: cover;"
+                     alt="Jack">
+            </div>
+            <div class="col-md-9">
+                <h5>Giacomo (detto Jack)</h5>
+                <h6>Batteria / Percussioni</h6>
+                <p class="text-muted">
+                    Fondatore e forza ritmica della band, Jack è l’energia che fa vibrare il palco. Con colpi precisi e
+                    un groove travolgente, guida ogni brano con dedizione assoluta e un senso del tempo che tiene unito
+                    ogni elemento del suono Skyfix. La sua batteria non è solo ritmo: è dinamica, viscerale, capace di
+                    sostenere e trascinare l’intero gruppo. Ogni sua performance è un mix perfetto di controllo e
+                    istinto, tecnica e passione.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-3 text-center">
+                <img src="img/giaco.png"
+                     class="rounded-circle img-fluid shadow" style="width: 150px; height: 150px; object-fit: cover;"
+                     alt="Giaco">
+            </div>
+            <div class="col-md-9">
+                <h5>Giacomo (detto Giaco)</h5>
+                <h6>Basso</h6>
+                <p class="text-muted">
+                    Tra i membri storici della band, Giaco è il cuore pulsante del groove targato Skyfix. Con il suo
+                    basso preciso e vibrante, fonde ritmo e melodia con una naturalezza che tiene insieme l'intero sound
+                    del gruppo. Solido come una roccia, affidabile in ogni situazione e sempre pronto a sperimentare,
+                    porta energia e coesione sul palco e in sala prove. La sua presenza è una certezza: silenziosa ma
+                    essenziale, creativa ma mai invadente.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+            <div class="col-md-3 text-center">
+                <img src="img/bila.png"
+                     class="rounded-circle img-fluid shadow" style="width: 150px; height: 150px; object-fit: cover;"
+                     alt="Bila">
+            </div>
+            <div class="col-md-9">
+                <h5>Giacomo (detto Bila)</h5>
+                <h6>Chitarra</h6>
+                <p class="text-muted">
+                    Entrato a far parte della band negli ultimi anni, Bila si è subito distinto per la sua precisione
+                    tecnica e l’attenzione maniacale ai dettagli. Il suo stile pulito e controllato ha aggiunto
+                    profondità e definizione al sound Skyfix, contribuendo a raffinarne l’identità sonora. Ogni nota che
+                    suona è pensata, ogni fraseggio al servizio del brano. Con discrezione e competenza, Bila è
+                    diventato un punto fermo della band, portando equilibrio, chiarezza e un tocco di classe a ogni
+                    esibizione.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4">
+            <div class="col-md-3 text-center">
+                <img src="img/ale.png"
+                     class="rounded-circle img-fluid shadow" style="width: 150px; height: 150px; object-fit: cover;"
+                     alt="Ale">
+            </div>
+            <div class="col-md-9">
+                <h5>Alessio</h5>
+                <h6>Chitarra</h6>
+                <p class="text-muted">
+                    Ultimo arrivato nella famiglia Skyfix, Ale ha portato subito una ventata di energia e passione pura
+                    per il rock. Con un solido background musicale e una presenza scenica travolgente, ha saputo
+                    integrarsi con naturalezza nel sound della band, lasciando il segno fin dal primo riff. Il suo stile
+                    diretto e istintivo aggiunge grinta e spontaneità, rendendolo una forza fresca ma già indispensabile
+                    nel panorama Skyfix. Una new entry che sembra esserci sempre stata.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="events">
+    <div class="container">
+        <h2 class="text-center mb-4">Prossimi Eventi</h2>
+        <p class="text-center">Presto online le prossime date dei nostri concerti! Seguici sui social per restare
+            aggiornato.</p>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p>Seguici sui social:</p>
+        <a href="https://facebook.com/skyfixband" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://instagram.com/skyfixband" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://youtube.com/@skyfixband" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+        <p class="mt-3 mb-0">&copy; 2025 Skyfix. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
